@@ -1,0 +1,348 @@
+/* Styles for About Page - about.html */
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Monaco', monospace;
+    background-color: #FFE0B2;
+    color: #ff3d45;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background: url('camera-image.jpg') no-repeat center center/cover;
+    padding: 30px;
+    color: #dd85b0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Section Styling */
+  #about {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+  }
+  
+  #about h2 {
+    color: #f85c70;
+    margin-bottom: 10px;
+  }
+  
+  #about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 750px;
+  }
+  
+  /* Aside Styling */
+  aside {
+    background-color: #ffc6c3;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  aside h3 {
+    text-align: center;
+    color: #d84315;
+  }
+  
+  aside ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  aside ul li {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #ffc6c3;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Styles for Index Page - index.html */
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Monaco', monospace;
+    background-color: #FFE0B2;
+    color: #ff3d45;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background: url('camera-image.jpg') no-repeat center center/cover;
+    padding: 30px;
+    color:#dd85b0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Navigation Styles */
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #F48FB1;
+    font-weight: bold;
+  }
+  
+  /* Heading Styles */
+  h1, h2, h3 {
+    font-family: 'Monaco', monospace;
+    color:#f85c70;
+    margin: 20px 0;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  /* Paragraph Styles */
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 800px;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  table, th, td {
+    border: 2px solid #D84315;
+    padding: 12px;
+  }
+  
+  th {
+    background-color: #E65100;
+    color: white;
+  }
+  
+  td:nth-child(1) {
+    background-color: #F48FB1;
+  }
+  
+  td:nth-child(2) {
+    background-color: #FFC1E3;
+  }
+  
+  td:nth-child(3) {
+    background-color: #FFDDEB;
+  }
+  
+  /* List Styles */
+  ul {
+    list-style-type: square;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+  }
+  
+  ul li {
+    background: #F48FB1;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color:#ffc6c3;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Styles for Contact Page - contact.html */
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Lora', serif; /* Updated font for a more elegant look */
+    background-color: #ffccb3; /* Warmer peachy orange background */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background: #ffe5d9; /* Light orange-pink box */
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    border: 2px solid #ff9f80; /* Stronger orange accent */
+}
+
+#contact h2 {
+    color: #ff6f61; /* Deep warm orange heading */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#contact table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+#contact td {
+    padding: 15px;
+    font-size: 18px;
+    color: #cc5c37; /* Rich orange-brown */
+    background: #ffd4b3; /* Softer orange fill */
+    border: 1px solid #ff9f80;
+}
+
+#contact a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #e55b4a;
+    text-decoration: underline;
+}
+
+/* Aside Styling */
+aside {
+    background-color: #ffbb99;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    text-align: center;
+    color: #cc4b2c;
+    font-size: 22px;
+}
+
+aside ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+aside ul li {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ff9f80;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 3px solid #ff6f61;
+}
+
+/* Styles for visit.html */
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ff6f61;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+h1, h2 {
+    color: #ff6f61;
+}
+
+a {
+    color: #ff4500;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ffa07a;
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    font-weight: bold;
+}
