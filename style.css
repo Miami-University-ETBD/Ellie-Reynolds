@@ -89,15 +89,6 @@ footer {
   padding: 0;
 }
 
-/* Body Styles */
-body {
-  font-family: 'Monaco', monospace;
-  background-color: #FFE0B2;
-  color: #ff3d45;
-  text-align: center;
-  padding: 20px;
-}
-
 /* Header Styles */
 header {
   background: url('camera-image.jpg') no-repeat center center/cover;
@@ -109,18 +100,17 @@ header {
 
 /* Navigation Styles */
 nav ul {
+  width: 100%;
   list-style: none;
   padding: 0;
 }
 
 nav ul li {
   display: inline;
-  margin: 0 15px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #F48FB1;
   font-weight: bold;
 }
 
@@ -215,17 +205,6 @@ footer {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-/* Body Styles */
-body {
-  font-family: 'Lora', serif;
-  /* Updated font for a more elegant look */
-  background-color: #ffccb3;
-  /* Warmer peachy orange background */
-  color: #333;
-  text-align: center;
-  padding: 20px;
 }
 
 /* Contact Section */
@@ -359,19 +338,9 @@ li {
   font-weight: bold;
 }
 
-/* Navigation Styles */
-nav {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
 nav a {
   color: white;
-  padding: 10px 20px;
   text-decoration: none;
-  margin: 0 10px;
   transition: background-color 0.3s;
 }
 
@@ -404,4 +373,9 @@ footer {
 /* Hover Effect for Button */
 button:hover {
   background-color: #575757;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }

@@ -6,7 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ellie Reynolds Sport Photography</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <style>
+        /* Style for the profile image */
+        #profile-image {
+            width: 300px;
+            height: auto;
+            transition: 0.3s ease-in-out;
+            /* Smooth transition for the hover effect */
+        }
+
+        /* Style for the image on hover */
+        #profile-image:hover {
+            content: url('images/Ellie2.jpg');
+            /* Switch image on hover */
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +31,6 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="visit.html">Visit</a></li>
-
             </ul>
         </nav>
     </header>
@@ -29,22 +42,19 @@
         <p>Sports have always been at the heart of both my life and my family’s. Growing up in a college town, Miami
             University, and near Cincinnati, home to our favorite professional teams like the Reds and Bengals, I had
             countless opportunities to attend games and experience the excitement of live sports.</p>
-        <button onclick="changeText()">Click to Learn More</button>
         <p id="extraInfo" style="display: none;">My passion for photography goes beyond capturing action—I love telling
             the stories behind the game.</p>
     </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <img src="images/hockey above.jpg" alt="Sports Photography 1" class="gallery-img">
-        <img src="images/bball.jpg" alt="Sports Photography 2" class="gallery-img">
-        <img src="images/fh.jpg" alt="Sports Photography 3" class="gallery-img" id="hoverImage">
+    <!-- Profile Image Section -->
+    <section id="profile-image-section">
+        <img id="profile-image" src="images/Ellie.jpeg" alt="Ellie Reynolds">
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:ellie@example.com">reynoleg@miamioh.edu</a></p>
-        <p>Follow my work on Instagram: <a href="https://www.instagram.com/elliereynoldsmedia"
+        <p>Follow On Instagram: <a href="https://www.instagram.com/elliereynoldsmedia"
                 target="_blank">@elliereynoldsmedia</a></p>
     </section>
 </body>

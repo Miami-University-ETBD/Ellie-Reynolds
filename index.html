@@ -5,7 +5,38 @@
   <title>Ellie Reynolds Sport Photography</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-</head>
+  <html lang="en">
+
+<body>
+  <button type="button" onclick="myFunction()">I am so glad you are here!</button>
+  <script>
+    function myFunction() {
+      alert("Thank you for visiting!.");
+    }
+  </script>
+
+</body>
+
+</html>
+
+<p id="welcome-message"></p>
+<button id="enter-name">Enter Your Name</button>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("enter-name");
+    const message = document.getElementById("welcome-message");
+
+    button.addEventListener("click", function () {
+      let name = prompt("What's your name?");
+      if (name) {
+        message.textContent = `Welcome, ${name}! Enjoy learning a little bit about me and my work!`;
+        button.style.display = "none";
+      }
+    });
+  });
+</script>
+
+</html>
 
 <body>
   <header>
