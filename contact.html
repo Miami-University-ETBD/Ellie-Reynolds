@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ellie Reynolds Photography</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="visit.html">Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section (Now at the Top) -->
+    <section id="contact">
+        <h2 onmouseover="changeText(this)" onmouseout="resetText(this)">Contact Me!</h2>
+        <table>
+            <tr>
+                <td>Email: <a href="mailto:reynoleg@miamioh.edu">reynoleg@miamioh.edu</a></td>
+                <td>Cell: 513-630-4962</td>
+                <td>Instagram: <a href="https://www.instagram.com/elliereynoldsmedia/"
+                        target="_blank">elliereynoldsmedia</a></td>
+            </tr>
+        </table>
+        <button id="promo-button" onclick="showPromo()">Promotion</button>
+    </section>
+
+    <!-- Portfolio Section (Moved Below Contact Info) -->
+    <section id="portfolio">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="images/hockey above.jpg" alt="Games">
+            <img src="images/bball.jpg" alt="Games">
+            <img src="images/track.jpg" alt="Games">
+            <img src="images/bball2.jpg" alt="Games">
+            <img src="images/fh.jpg" alt="Games">
+            <img src="images/bball3.jpg" alt="Games">
+            <img src="images/fh2.jpg" alt="Tournament">
+            <img src="images/track2.jpg" alt="Games">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Ellie Reynolds Photography. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showPromo() {
+            document.getElementById("promo-button").textContent = "30% Off If You Recommend Me!";
+        }
+
+        function changeText(element) {
+            element.textContent = "Get in Touch!";
+        }
+
+        function resetText(element) {
+            element.textContent = "Contact Me!";
+        }
+    </script>
+
+</body>
+
+</html>

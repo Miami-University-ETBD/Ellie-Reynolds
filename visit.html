@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellie Reynolds Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="visit.html">Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Visit Lens & Light Photography</h1>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Check out my work: <a href="https://elliereynolds.myportfolio.com"
+                target="_blank"><strong>elliereynolds.myportfolio.com</strong></a></p>
+
+        <!-- Slideshow Section Added Below the "Check out my work" Text -->
+        <div id="slideshow">
+            <img id="slideshow-image" src="images/hockey above.jpg" alt="Slideshow Image"
+                style="width:100%; max-width:600px; display:block; margin:auto;">
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const images = [
+                    "images/hockey above.jpg",
+                    "images/bball.jpg",
+                    "images/fh.jpg",
+                    "images/bball2.jpg",
+                    "images/fh2.jpg",
+                    "images/track.jpg",
+                    "images/bball3.jpg",
+                    "images/track2.jpg",
+                ];
+                let index = 0;
+                const slideshowImg = document.getElementById("slideshow-image");
+
+                setInterval(() => {
+                    console.log("Loading image: " + images[index]);  // Debugging line
+                    index = (index + 1) % images.length;
+                    slideshowImg.src = images[index];
+                }, 3000); // Change image every 3 seconds
+            });
+        </script>
