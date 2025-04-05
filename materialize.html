@@ -60,6 +60,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="materialize.html">Materialize</a></li>
             </ul>
         </div>
     </nav>
@@ -103,16 +104,147 @@
             </div>
         </div>
     </div>
+    <!-- Carousel Section -->
+    <div class="container">
+        <h4 class="center-align">Behind the Lens</h4>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="images/bball4.JPG" alt="Basketball"></a>
+            <a class="carousel-item" href="#two!"><img src="images/swim.JPG" alt="Swim"></a>
+            <a class="carousel-item" href="#three!"><img src="images/soccer2.JPG" alt="Soccer"></a>
+        </div>
+    </div>
+
+    <!-- Collapsible Section -->
+    <div class="container">
+        <h4 class="center-align">Questions About My Work?</h4>
+        <ul class="collapsible">
+            <!-- Question 1 -->
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">photo_camera</i>What sports do you cover?
+                </div>
+                <div class="collapsible-body">
+                    <span>
+                        I photograph a variety of sports including football, field hockey, swim, basketball, soccer, and
+                        track & field. I aim to capture the energy, emotion, and motion of each event!
+                    </span>
+                </div>
+            </li>
+
+            <!-- Question 2 -->
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">event</i>How can I book a session?
+                </div>
+                <div class="collapsible-body">
+                    <span>
+                        You can book a session by visiting the <a href="contact.html">Contact</a> page or by DMing me on
+                        Instagram <a href="https://instagram.com/elliereynoldsmedia"
+                            target="_blank">@elliereynoldsmedia</a>.
+                    </span>
+                </div>
+            </li>
+
+            <!-- Question 3 -->
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">collections</i>Where can I see more photos?
+                </div>
+                <div class="collapsible-body">
+                    <span>
+                        Check out my full gallery on <a href="https://elliereynolds.myportfolio.com" target="_blank">my
+                            portfolio site</a> or explore recent highlights on my Instagram!
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Radio Button Section -->
+    <div id="radio-section" class="section container">
+        <h2>Select the Sport You're Most Excited to See Captured</h2>
+        <form>
+            <p>
+                <label>
+                    <input name="sport" type="radio" value="Football" onclick="displaySport()" />
+                    <span>Football</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="sport" type="radio" value="Field Hockey" onclick="displaySport()" />
+                    <span>Field hockey</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="sport" type="radio" value="Track & Field" onclick="displaySport()" />
+                    <span>Track & Field</span>
+                </label>
+            </p>
+        </form>
+        <div id="sport-response" class="card-panel pink lighten-5"></div>
+    </div>
+
+    <!-- Email Feedback Section -->
+    <div id="feedback-section" class="section container">
+        <h2>Subscribe for Updates</h2>
+        <form onsubmit="submitEmail(event)">
+            <div class="input-field">
+                <input id="email" type="email" required>
+                <label for="email">Email</label>
+            </div>
+            <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+        </form>
+        <div id="email-response"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Check Your email-response</h4>
+            <p id="modal-content-text"></p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
+        // Initialize components
         document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.materialboxed');
-            M.Materialbox.init(elems);
+            M.Carousel.init(document.querySelectorAll('.carousel'));
+            M.Collapsible.init(document.querySelectorAll('.collapsible'));
+            M.Modal.init(document.querySelectorAll('.modal'));
         });
+
+        // Display selected sport
+        function displaySport() {
+            const selectedSport = document.querySelector('input[name="sport"]:checked').value;
+            document.getElementById('sport-response').innerText = `You selected: ${selectedSport}`;
+        }
+
+        // Email submission handler
+        function submitEmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            document.getElementById('email-response').innerText = `Thanks for subscribing! You'll get the latest photography updates at: ${email}`;
+            document.getElementById('email').value = '';
+
+            // Show modal
+            document.getElementById('modal-content-text').innerText = `You're all set! Game day galleries, highlight reels, and session info will be sent to: ${email}`;
+            const modal = M.Modal.getInstance(document.getElementById('modal1'));
+            modal.open();
+        }
     </script>
+
+    <!-- Video -->
+    <video class="responsive-video" controls>
+        <source src="images/video.mp4" type="video/mp4">
+    </video>
+
 </body>
 
 </html>
-<video class="responsive-video" controls>
-    <source src="images/video.mp4" type="video/mp4">
-</video>
