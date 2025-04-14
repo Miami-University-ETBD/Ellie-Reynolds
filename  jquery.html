@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#p1").hover(function () {
+                alert("Hi! Let's get capturing!");
+            },
+                function () {
+                    alert("Bye! See ya later at your next event!");
+                });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").toggle();
+            });
+        });
+    </script>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Len's & Light Photography</title>
+</head>
+
+<body>
+    <!-- Header of the website -->
+    <header>
+        <h1> Welcome to Len's & Light Photography!</h1>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="visit.html">Visit</a>
+            <a href="materialize.html">Materialize</a>
+            <a href="jquery.html">JQuery</a>
+        </div>
+
+    </header>
+
+    <body>
+
+        <section style="background-color: #e9a4c2;">
+            <p id="p1">For All Your Sport Photo Needs!</p>
+        </section>
+
+        <section style="background-color: #957595;">
+            <p>Senior Sports Portrait
+                Package: $150 for 1 Hour
+                2 Locations + 2 Outfits</p>
+            <p>Game Day
+                Package: $75 for One Full Game</p>
+            <p>Senior Night
+                Package: $100 for Ceremony and Game
+            </p>
+        </section>
+        <hr>
+
+        <section style="background-color: #ffe894;">
+            <button>Why Sports Photography?</button>
+
+
+            <p>I grew up in a family where sports were everything — playing them, talking about them, and watching them
+                was just part of everyday life. Naturally, sports became the heartbeat of who I am. As I got older, I
+                began to see the deeper lessons behind the game — the stories, the emotion, the connections. That’s what
+                drew me to sports photography. It gives me the chance to freeze those powerful moments in time and use
+                my creative eye to show others that sports are about so much more than just the game.</p>
+            <p>I have experience at the high school and collegiate level. As well as in portrait and event photography!</p>
+        </section>
+        <hr>
+        <section style="background-color: #ffaa71;">
+            <p id="p1">Enter to Win A Free Game Day Package!</p>
+
+            <button>Click To Limit Information</button>
+        </section>
+
+    </body>
+
+</html>
